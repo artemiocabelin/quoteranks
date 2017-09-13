@@ -1,0 +1,4 @@
+root
+<app-quote (quotesArrayEmitter)="getQuotes($event)"></app-quote>
+<app-quote-list [myQuotes] = "quotes" (deleteQCommandEmitter)="removeQuotes($event)" (sortCommandEmitter)="sortQuotes()"></app-quote-list>
+
